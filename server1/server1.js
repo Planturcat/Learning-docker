@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const SERVER2_URL =  'http://localhost:5002';
+const SERVER2_URL =  'http://server2:5002'||'http://localhost:5002';
 
 app.get('/start', async (req, res) => {
   let results = [];
