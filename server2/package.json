@@ -5,8 +5,12 @@
   "scripts": {
     "devStart": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "docker",
+    "node"
+  ],
+  "author": "Justin Seymour",
   "license": "ISC",
   "description": "",
   "dependencies": {
