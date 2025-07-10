@@ -1,13 +1,11 @@
 const express = require('express');
 const cors = require('cors');
-
 const app = express();
 
-// Enable CORS for all routes
+
 app.use(cors());
 app.use(express.json());
 
-// Endpoint for server1 to call
 app.post('/api/relay', (req, res) => {
   const { number } = req.body;
   if (number === 7) {

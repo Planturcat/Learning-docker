@@ -4,14 +4,12 @@ const cors = require('cors');
 
 const app = express();
 
-// Enable CORS for all routes
+
 app.use(cors());
 app.use(express.json());
 
-// Use environment variable for server2 URL in Docker
-const SERVER2_URL = process.env.SERVER2_URL || 'http://localhost:5002';
+const SERVER2_URL =  'http://localhost:5002';
 
-// Endpoint to trigger the random number sending process
 app.get('/start', async (req, res) => {
   let results = [];
   for (let i = 0; i < 6; i++) {
