@@ -1,12 +1,24 @@
 version: '3'
+
 services:
-  server1:
+  server-a:
     build: ./server1
     ports:
-      - "5001:5001"
+      - '4000:5001'
+    volumes:
+      - ./server1:/app
     depends_on:
-      - server2
-  server2:
+      - server-b
+    networks:
+      - learning-net
+
+  server-b:
     build: ./server2
     ports:
-      - "5002:5002"
+      - '4001:5002'
+    networks:
+      - learning-net
+
+networks:
+  learning-net:
+    driver: bridge

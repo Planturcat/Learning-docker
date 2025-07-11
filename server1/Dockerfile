@@ -1,6 +1,13 @@
 FROM node:alpine
+
 WORKDIR /app
+
 COPY package*.json ./
+
 RUN npm install
+
 COPY . .
-CMD ["node", "server1.js"] 
+
+EXPOSE 5001
+
+CMD ["npm", "run", "dev"] 
