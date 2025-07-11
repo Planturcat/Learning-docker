@@ -1,9 +1,11 @@
 {
   "name": "docker-project",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server1.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server1.js",
+  
+    "start": "docker build -t server1 ."
   },
   "keywords": [],
   "author": "",
