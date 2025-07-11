@@ -1,4 +1,3 @@
-
 # Graduate Developer Docker Project
 
 As a graduate developer, I need to demonstrate my understanding of basic Docker concepts by creating, containerising, and running a simple Node.js script. I will also practice essential Docker CLI commands. I will submit a short Loom video walking through the demo to confirm I understand each step.
@@ -22,3 +21,5 @@ As a graduate developer, I need to demonstrate my understanding of basic Docker 
    - Building the image
    - Running the container
    - Using the listed CLI commands
+
+THIS IS A TEST

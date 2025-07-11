@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "main": "server2.js",
   "scripts": {
-    "devStart": "nodemon server2.js",
-    "start": "docker build -t server2 ."
+    "dev": "nodemon server2.js",
+    "build": "docker build -t server2 ."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "express",
+    "docker",
+    "node"
+  ],
+  "author": "Justin Seymour",
   "license": "ISC",
   "description": "",
   "dependencies": {

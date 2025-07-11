@@ -2,11 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-
 app.use(cors());
 app.use(express.json());
 
 app.post('/api/relay', (req, res) => {
+  console.log('Server 2 received request');
   const { number } = req.body;
   if (number === 7) {
     res.json({ message: 'You found the magical number!' });

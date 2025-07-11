@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "server1.js",
   "scripts": {
-    "devStart": "nodemon server1.js",
-  
-    "start": "docker build -t server1 ."
+    "dev": "nodemon server1.js",
+    "build": "docker build -t server1 ."
   },
   "keywords": [],
   "author": "",
